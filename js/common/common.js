@@ -103,11 +103,6 @@ $(document).on("click",".agree_promt",function(){
     agreePromt(this,function (ele) {
         alert('这是同意且带有输入框的回调');
         alert("输入框的内容是"+$(ele).prev(".layer_text").val());
-        var strTit = "请确认已打款";
-        var strContent = "同意后用户端会显示【已到账】，请谨慎操作！";
-        agree(This,strTit,strContent,function (ele) {
-            alert('这是同意的回调')
-        })
     })
 
 });
