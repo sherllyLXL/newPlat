@@ -139,7 +139,7 @@ nav {
 }
 .search_div_table {
 	height:65px;
-	width: 434px;
+	width: 230px;
 	text-align: left;
 	position:absolute;
 	margin-left:0;
@@ -168,8 +168,9 @@ nav {
 }
 .search_div_table input {
 	margin-top:15px;
-	margin-left:10px;
-	width: 300px;
+	margin-left:5px;
+	width: 130px;
+	padding-left: 30px;
 }
 .search_div_table span{
 	margin-left:10px;
@@ -303,7 +304,7 @@ background-color: #139041;
 	position:absolute;
 	top:0;
 	left:0;
-	display: block;
+	display: none;
 	width:35px;
 	height:32px;
 	background-color:#b5b5b5;
@@ -327,6 +328,7 @@ td {
 	border-bottom: 1px solid #C9C9C9;
 	height: 56px;
 	text-align: center;
+	cursor: pointer;
 }
 
 th {
