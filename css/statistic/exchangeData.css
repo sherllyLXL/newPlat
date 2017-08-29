@@ -1,0 +1,43 @@
+.t1 {
+    width:232px;
+}
+.t2 {
+    width:133px;
+}
+.t3 {
+    width:133px;
+}
+.t4 {
+    width:164px;
+}
+.t5 {
+    width:244px;
+}
+.t6 {
+    width:114px;
+}
+.t7 {
+    width:179px;
+}
+.t8 {
+    width:138px;
+}
+table .sl,
+table .ql {
+    margin-left: 60px;
+}
+
+#layer {
+    width: 390px;
+    height: 450px;
+    /*border: 1px solid red;*/
+}
+
+.save {
+    display: block;
+    margin: 0 auto;
+}
+
+.layer_tab input ,.layer_tab .select{
+    width:70%;
+}

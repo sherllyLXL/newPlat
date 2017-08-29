@@ -525,4 +525,13 @@ td {
 	margin: 0 ;
 	height: 100%;
 }
-
+/*文字颜色*/
+.greenT {
+	color:#00B83F;
+}
+.redT {
+	color: #c22915;
+}
+.orangeT {
+	color: orangered;
+}
