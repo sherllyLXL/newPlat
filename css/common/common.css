@@ -462,7 +462,31 @@ td {
 .layer_del_content .violet {
     margin-left:24px;
 }
-
+.layer_agree {
+	width:465px;
+	height:250px;
+	margin-top:10px;
+	position:absolute;
+	top:34px;
+	left:-300px;
+	z-index:100;
+	background-color: white;
+}
+.layer_agree_tit {
+	padding-top:30px;
+	width:100%;
+	background-color: white;
+	line-height: 50px;
+	text-align: center;
+}
+.layer_agree_content {
+	background-color: white;
+	padding:30px 0;
+	text-align: center;
+}
+.layer_agree_content .violet {
+	margin-left:24px;
+}
 /*========iframe===========*/
 #left{
 	position: fixed;

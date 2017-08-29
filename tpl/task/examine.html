@@ -1,10 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<html>
+<head lang="zn">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
     <title>任务审核</title>
 </head>
+<link rel="stylesheet" type="text/css" href="../../css/common/common.css"/>
+<link rel="stylesheet" type="text/css" href="../../font/iconfont.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/task/examine.css"/>
+
 <body>
 
+<section>
+
+    <div id="header_input">
+        <input type="button" value="新增+" class="bc gbtn" id="add"/>
+    </div>
+
+    <div id="table_div">
+        <table border="1" cellspacing="0" cellpadding="0">
+            <tr>
+                <th class="t1">日期</th>
+                <th class="t2">用户名</th>
+                <th class="t3">区域</th>
+                <th class="t4">任务名称</th>
+                <th class="t5">任务类型</th>
+                <th class="t5">任务目标</th>
+                <th class="t6">众云币奖励</th>
+                <th class="t7">操作</th>
+            </tr>
+            <tr>
+                <td>2017/8/20</td>
+                <td>暗暗</td>
+                <td>德阳</td>
+                <td>3G转4G</td>
+                <td>办理成功</td>
+                <td>100</td>
+                <td>1000</td>
+                <td>
+                    <input type="button" class="sbtn cb agree_ipt" value="同意"/>
+                    <input type="button" class="sbtn ql" value="拒绝"/>
+                </td>
+            </tr>
+
+
+
+        </table>
+
+        <div id="page">
+            <div>
+
+            </div>
+
+            <div id="page_right">
+                <span>共	记录<span>4</span>条，每页<span>10</span>条</span>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<div id="layer">
+    <div class="layer_tit">
+        <span>新增业务配置信息</span>
+        <i id="close_lay" class="iconfont icon-close"></i>
+    </div>
+
+    <div class="layer_content">
+        <div class="layer_tab">
+            <span>平台名称：</span>
+            <div class="select dowebok">
+                <span class="placeholder">请选择</span>
+                <ul>
+                    <li>百度</li>
+                    <li>谷歌</li>
+                    <li>雅虎</li>
+                    <li>新浪</li>
+                </ul>
+            </div>
+        </div>
+        <div class="layer_tab">
+            <span>任务类型：</span>
+            <div class="select dowebok">
+                <span class="placeholder">请选择任务类型</span>
+                <ul>
+                    <li>百度</li>
+                    <li>谷歌</li>
+                    <li>雅虎</li>
+                    <li>新浪</li>
+                </ul>
+            </div>
+        </div>
+        <div class="layer_tab">
+            <span>区&emsp;&emsp;域：</span>
+            <input type="text" placeholder="请输入区域">
+        </div>
+        <div class="layer_tab">
+            <span>会员星级：</span>
+            <input type="text" placeholder="请输入会员星级">
+        </div>
+        <div class="layer_tab">
+            <span>分成比例：</span>
+            <input type="text" placeholder="请输入分成比例">
+        </div>
+    </div>
+
+    <input type="button" name="" id="" value="保存" class="bc zbtn save"/>
+
+</div>
+
 </body>
+<script type="text/javascript" src="../../js/common/jquery-2.2.3.js"></script>
+<script type="text/javascript" src="../../js/common/common.js"></script>
+<script type="text/javascript" src="../../js/task/examine.js"></script>
+
 </html>

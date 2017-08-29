@@ -56,6 +56,43 @@ function del(obj,yes) {
     });
 }
 
+// 同意按钮操作
+$(document).on("click",".agree_ipt",function(){
+    agree(this,function () {
+        alert('这是同意的回调')
+    })
+
+});
+function agree(obj,yes) {
+    if($(obj).parents(".warp").find(".layer_agree").length !=0) {
+        $(obj).parents(".warp").find(".layer_agree").remove();
+    }
+    if($(obj).parents(".warp").length !=0) {
+        $(obj).unwrap();
+    }
+    $(obj).wrap("<div class='warp'></div>");
+    $(".warp").append('<div class="layer_agree"> ' +
+        '<div class="layer_agree_tit">请再次确认 </br> 同意后将给用户发放众云币，请谨慎操作!</div> ' +
+        '<div class="layer_agree_content"> ' +
+        '<input type="button" class="sbtn cb del_cancel" value="取消"> ' +
+        '<input type="button" class="sbtn violet del_sure" value="确定"> ' +
+        '</div> ' +
+        '</div>');
+    $(".del_cancel").on("click",function(){
+        $(obj).parents(".warp").find(".layer_agree").remove();
+        $(obj).unwrap();
+    });
+    $(".del_sure").on("click",function(){
+        if(yes) {
+            yes(this);
+            $(obj).parents(".warp").find(".layer_agree").remove();
+            $(obj).unwrap();
+        }else {
+            $(obj).parents(".warp").find(".layer_agree").remove();
+            $(obj).unwrap();
+        }
+    });
+}
 // ======iframe宽度自适应======
 function setSize(){
     var w = $(window).width() - 312;
