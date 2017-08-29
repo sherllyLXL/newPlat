@@ -173,3 +173,8 @@ $(document).on('click','.head_tit li a',function (){
     $(this).parents('.head_tit').addClass('tit_active');
     return false;
 });
+
+// 表个框搜索按钮
+$(".search i").on("click",function(){
+    $("#search_div_table").toggle(200);
+});
