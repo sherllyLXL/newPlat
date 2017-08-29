@@ -43,8 +43,11 @@
 .tt7{
     width:100px;
 }
+.tt8 {
+    width: 117px;
+}
 #layer {
-    width: 718px;
+    width: 903px;
     height: 400px;
     /*border: 1px solid red;*/
 }
