@@ -20,7 +20,7 @@ $('body').on('click', function() {
 // 删除按钮操作
 $(document).on("click",".del_ipt",function(){
     // del(this);
-    del(this,function () {
+    del(this,function (ele) {
             alert('这是删除的回调')
     })
 
@@ -45,8 +45,9 @@ function del(obj,yes) {
         $(obj).unwrap();
     });
     $(".del_sure").on("click",function(){
+        var This = this;
         if(yes) {
-            yes(this);
+            yes(This);
             $(obj).parents(".warp").find(".layer_del").remove();
             $(obj).unwrap();
         }else {
@@ -58,12 +59,13 @@ function del(obj,yes) {
 
 // 同意按钮操作
 $(document).on("click",".agree_ipt",function(){
-    agree(this,function () {
+    var strTit = "请再次确认";
+    var strContent = "同意后将给用户发放众云币，请谨慎操作！";
+    agree(this,strTit,strContent,function (ele) {
         alert('这是同意的回调')
     })
-
 });
-function agree(obj,yes) {
+function agree(obj,strTit,strContent,yes) {   //obj为当前对象，str为传入值，yes为回调函数
     if($(obj).parents(".warp").find(".layer_agree").length !=0) {
         $(obj).parents(".warp").find(".layer_agree").remove();
     }
@@ -72,7 +74,7 @@ function agree(obj,yes) {
     }
     $(obj).wrap("<div class='warp'></div>");
     $(".warp").append('<div class="layer_agree"> ' +
-        '<div class="layer_agree_tit">请再次确认 </br> 同意后将给用户发放众云币，请谨慎操作!</div> ' +
+        '<div class="layer_agree_tit">'+strTit+' </br> '+strContent+'</div> ' +
         '<div class="layer_agree_content"> ' +
         '<input type="button" class="sbtn cb del_cancel" value="取消"> ' +
         '<input type="button" class="sbtn violet del_sure" value="确定"> ' +
@@ -83,10 +85,59 @@ function agree(obj,yes) {
         $(obj).unwrap();
     });
     $(".del_sure").on("click",function(){
+        var This = this;
         if(yes) {
-            yes(this);
+            yes(This);
             $(obj).parents(".warp").find(".layer_agree").remove();
             $(obj).unwrap();
+        }else {
+            $(obj).parents(".warp").find(".layer_agree").remove();
+            $(obj).unwrap();
+        }
+    });
+}
+
+// 同意按钮并且带有输入框操作
+$(document).on("click",".agree_promt",function(){
+    var This = this;
+    agreePromt(this,function (ele) {
+        alert('这是同意且带有输入框的回调');
+        alert("输入框的内容是"+$(ele).prev(".layer_text").val());
+        var strTit = "请确认已打款";
+        var strContent = "同意后用户端会显示【已到账】，请谨慎操作！";
+        agree(This,strTit,strContent,function (ele) {
+            alert('这是同意的回调')
+        })
+    })
+
+});
+function agreePromt(obj,yes) {
+    if($(obj).parents(".warp").find(".layer_agree").length !=0) {
+        $(obj).parents(".warp").find(".layer_agree").remove();
+    }
+    if($(obj).parents(".warp").length !=0) {
+        $(obj).unwrap();
+    }
+    $(obj).wrap("<div class='warp'></div>");
+    $(".warp").append('<div class="layer_agree"> ' +
+        '<div class="layer_agree_tit">请输入兑换码</div> ' +
+        '<div class="layer_agree_content"> ' +
+        '<input type="text" class="layer_text">'+
+        '<input type="button" class="sbtn cb del_sure" value="确认"> ' +
+        '<input type="button" class="sbtn violet del_cancel" value="关闭"> ' +
+        '</div> ' +
+        '</div>');
+    $(".del_cancel").on("click",function(){
+        $(obj).parents(".warp").find(".layer_agree").remove();
+        $(obj).unwrap();
+    });
+    $(".del_sure").on("click",function(){
+        var This = this;
+        if(yes) {
+            $(obj).parents(".warp").find(".layer_agree").remove();
+            $(obj).unwrap();
+            yes(This);
+
         }else {
             $(obj).parents(".warp").find(".layer_agree").remove();
             $(obj).unwrap();

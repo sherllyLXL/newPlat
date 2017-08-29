@@ -476,7 +476,7 @@ td {
 	padding-top:30px;
 	width:100%;
 	background-color: white;
-	line-height: 50px;
+	line-height: 40px;
 	text-align: center;
 }
 .layer_agree_content {
@@ -486,6 +486,13 @@ td {
 }
 .layer_agree_content .violet {
 	margin-left:24px;
+}
+/*弹出框输入*/
+.layer_agree_content input[type="text"] {
+	width:70%;
+	height:42px;
+	display: block;
+	margin-bottom:30px;
 }
 /*========iframe===========*/
 #left{
@@ -518,3 +525,4 @@ td {
 	margin: 0 ;
 	height: 100%;
 }
+
