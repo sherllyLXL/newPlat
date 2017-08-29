@@ -175,6 +175,14 @@ $(document).on('click','.head_tit li a',function (){
 });
 
 // 表个框搜索按钮
-$(".search i").on("click",function(){
-    $("#search_div_table").toggle(200);
+$("th .icon-search").on("click",function(){
+    $(this).parents('th').siblings().each(function(){
+        $(this).find('.search_div_table').fadeOut(400)
+    });
+
+    // $(".search_div_table").each(function () {
+    //     $(this).fadeOut();
+    // })
+
+    $(this).siblings(".search_div_table").toggle(200);
 });

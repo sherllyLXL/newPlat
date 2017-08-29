@@ -129,7 +129,7 @@ nav {
 	font-size: 18px;
 }
 
-#search_div,#search_div_table {
+#search_div,.search_div_table {
 	float: left;
 	position: relative;
 	height: 34px;
@@ -137,7 +137,7 @@ nav {
 	margin-left: 120px;
 	background-color: white;
 }
-#search_div_table {
+.search_div_table {
 	height:65px;
 	width: 434px;
 	text-align: left;
@@ -152,12 +152,12 @@ nav {
 	top: 10px;
 	left: 14px;
 }
-#search_div_table .icon-search {
+.search_div_table .icon-search {
 	position: absolute;
 	top: 25px;
 	left: 14px;
 }
-#search_div input,#search_div_table input {
+#search_div input,.search_div_table input {
 	width: 200px;
 	height: 34px;
 	outline: none;
@@ -166,12 +166,12 @@ nav {
 	background-color: #b5b5b5;
 	padding-left: 50px;
 }
-#search_div_table input {
+.search_div_table input {
 	margin-top:15px;
 	margin-left:10px;
 	width: 300px;
 }
-#search_div_table span{
+.search_div_table span{
 	margin-left:10px;
 	color:#3e7dbd;
 	cursor: pointer;
