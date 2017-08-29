@@ -1,0 +1,63 @@
+.t1{
+    width:153px;
+}
+.t2{
+    width:140px;
+}
+.t3{
+    width:110px;
+}
+.t4{
+    width:100px;
+}
+.t5{
+    width:110px;
+}
+.t6{
+    width:84px;
+}
+.t7{
+    width:80px;
+}
+.t8{
+    width:168px;
+}
+.t9{
+    width:203px;
+}
+.t10{
+    width:80px;
+}
+
+#layer {
+    width: 756px;
+    height: 511px;
+    /*border: 1px solid red;*/
+}
+.layer_content_left {
+    width:48%;
+    float:left;
+}
+.layer_content_right {
+    float: right;
+    width:48%;
+}
+.select{
+    width: 60%;
+    /*margin-left:30px;*/
+}
+.layer_tab input,.layer_tab .select {
+    width:65%;
+}
+.btnG {
+    width: 100%;
+    clear: both;
+    text-align: center;
+}
+.save {
+    margin-right:4%;
+}
+
+.ql{
+	margin-left: 15px;
+}

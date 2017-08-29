@@ -1,0 +1,90 @@
+.t1{
+    width:170px;
+}
+.t2{
+    width:196px;
+}
+.t3{
+    width:226px;
+}
+.t4{
+    width:194px;
+}
+.t5{
+    width:78px;
+}
+.t6{
+    width:142px;
+}
+.t7{
+    width:147px;
+}
+.t8{
+    width:246px;
+}
+.tt1{
+    width:100px;
+}
+.tt2{
+    width:110px;
+}
+.tt3{
+    width:103px;
+}
+.tt4{
+    width:98px;
+}
+.tt5{
+    width:94px;
+}
+.tt6{
+    width:116px;
+}
+.tt7{
+    width:100px;
+}
+
+table .sl, table .ql
+{
+    margin-left:60px;
+}
+#layer {
+    width: 718px;
+    height: 400px;
+    /*border: 1px solid red;*/
+}
+
+.save {
+    display: block;
+    margin: 0 auto;
+}
+
+.select{
+    width:60%;
+    margin-left:30px;
+}
+.layer_tab input {
+    width:70%;
+}
+.btnG {
+    width: 100%;
+    clear: both;
+    text-align: center;
+}
+.save,.reset {
+    display: inline-block;
+    margin-right:10px;
+}
+.layerLitTab {
+    border:none;
+    background: #cbcbcb;
+}
+.tree {
+    width: 100%;
+    padding-bottom:20px;
+    border-bottom:solid 1px #bebebe;
+}
+.layer_table{
+    height:300px;
+    overflow-y: scroll;
+}

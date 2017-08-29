@@ -1,0 +1,36 @@
+.tab_name {
+	width: 151px;
+}
+
+.tab_priority {
+	width: 130px;
+}
+.tab_man{
+	width: 146px;
+}
+.tab_time{
+	width: 247px;
+}
+.tab_do {
+	width: 294px;
+}
+
+table .sl,
+table .ql {
+	margin-left: 60px;
+}
+
+#layer {
+	width: 756px;
+	height: 271px;
+	/*border: 1px solid red;*/
+}
+
+.save {
+	display: block;
+	margin: 0 auto;
+}
+
+.layer_tab input[type=text],.select{
+	width: 570px;
+}

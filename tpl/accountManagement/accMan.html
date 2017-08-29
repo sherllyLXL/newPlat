@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zn">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>权限管理</title>
+    <link rel="stylesheet" href="../../css/common/zTreeStyle/zTreeStyle.css">
+    <link rel="stylesheet" type="text/css" href="../../css/common/common.css"/>
+    <link rel="stylesheet" type="text/css" href="../../font/iconfont.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/accountManagement/accMan.css"/>
+</head>
+<body>
+
+<section>
+
+    <div id="header_input">
+        <input type="button" value="新增+" class="bc gbtn" id="add"/>
+    </div>
+
+    <div id="table_div">
+        <table border="1" cellspacing="0" cellpadding="0">
+            <tr>
+                <th class="t1">用户角色</th>
+                <th class="t3">拥有权限</th>
+                <th class="t4">创建时间</th>
+                <th class="t5">操作</th>
+            </tr>
+            <tr>
+                <td>管理员</td>
+                <td>兑换管理-兑换配置(新增，查看，编辑，删除)</td>
+                <td>2017/8/26 22:22:22</td>
+                <td>
+                    <input type="button" class="sbtn cb" value="编辑"/>
+                    <input type="button" class="sbtn ql del_ipt" value="删除"/>
+                </td>
+            </tr>
+            <tr>
+                <td>管理员</td>
+                <td>兑换管理-兑换配置(新增，查看，编辑，删除)</td>
+                <td>2017/8/26 22:22:22</td>
+                <td>
+                    <input type="button" class="sbtn cb" value="编辑"/>
+                    <input type="button" class="sbtn ql del_ipt" value="删除"/>
+                </td>
+            </tr>
+            <tr>
+                <td>管理员</td>
+                <td>兑换管理-兑换配置(新增，查看，编辑，删除)</td>
+                <td>2017/8/26 22:22:22</td>
+                <td>
+                    <input type="button" class="sbtn cb" value="编辑"/>
+                    <input type="button" class="sbtn ql del_ipt" value="删除"/>
+                </td>
+            </tr>
+
+        </table>
+
+        <div id="page">
+            <div>
+
+            </div>
+
+            <div id="page_right">
+                <span>共	记录<span>4</span>条，每页<span>10</span>条</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<div id="layer">
+    <div class="layer_tit">
+        <span>新增角色</span>
+        <i id="close_lay" class="iconfont icon-close"></i>
+    </div>
+
+    <div class="layer_content">
+        <div class="layer_tab">
+            <span>选择角色：</span>
+            <div class="select dowebok">
+                <span class="placeholder">请选择</span>
+                <ul>
+                    <li>百度</li>
+                    <li>谷歌</li>
+                    <li>雅虎</li>
+                    <li>新浪</li>
+                </ul>
+            </div>
+        </div>
+        <div class="layer_tab layerLitTab">
+            <span>拥有权限：</span>
+        </div>
+        <div class="tree">
+            <ul id="treeDemo" class="ztree"></ul>
+        </div>
+    </div>
+
+    <div class="btnG">
+        <input type="button" name="" id="" value="保存" class="bc zbtn save"/>
+        <input type="button" name="" id="" value="重置" class="bc zbtn ql reset"/>
+        <input type="button" name="" id="" value="关闭" class="bc zbtn red close"/>
+    </div>
+
+</div>
+
+<script type="text/javascript" src="../../js/common/jquery-2.2.3.js"></script>
+<script type="text/javascript" src="../../js/common/jquery.ztree.core.min.js"></script>
+<script type="text/javascript" src="../../js/common/common.js"></script>
+<script type="text/javascript" src="../../js/accountManagement/accMan.js"></script>
+</body>
+</html>

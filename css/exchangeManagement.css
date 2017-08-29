@@ -1,0 +1,244 @@
+.t1{
+    width: 170px;
+}
+.t2{
+    width: 194px;
+}
+.t3{
+    width: 149px;
+}
+.t4{
+    width: 140px;
+}
+.t5{
+    width: 132px;
+}
+.t6{
+    width: 322px;
+}
+
+#layer{
+    width: 1140px;
+    height: 450px;
+}
+
+/*================*/
+.d_td{
+    border-bottom: 1px solid #ababab;
+    clear: both;
+    height: 72px;
+}
+.d_td>div{
+    float: left;
+    border-left: 1px solid #ababab;
+}
+.d1{
+    width: 317px;
+}
+.d2{
+    width: 321px;
+}
+.d3{
+    width: 371px;
+}
+.d1>span,.d2>span,.d3>span{
+    display: block;
+    float: left;
+    height: 72px;
+    line-height:71px;
+    background-color: #e0e4e8;
+    text-align: center;
+    color: #191d21;
+    font-size: 18px;
+}
+.d1>div,.d2>div,.d3>div{
+    float: left;
+    height: 72px;
+    line-height:71px;
+    border-left: 1px solid #ababab;
+}
+.d1>span{
+    width: 124px;
+}
+.d2>span{
+    width: 140px;
+}
+.d3>span{
+    width: 154px;
+}
+.d1>div{
+    width: 192px;
+}
+.d2>div{
+    width: 180px;
+}
+.d3>div{
+    width: 216px;
+}
+
+.d_td .select{
+    width: 146px;
+    height: 31px;
+    border: 1px solid #ababab;
+    display: block;
+    margin: 0 auto;
+    margin-top: 19px;
+    float: none;
+}
+.d_td .select .placeholder{
+    width: 116px;
+    height: 31px;
+    line-height: 31px;
+    text-align: center;
+    margin-left: 0;
+    border-right: 1px solid #ababab;
+}
+.d_td .select ul li{
+    padding:0 5px;
+    line-height: 31px;
+}
+
+.select .placeholder:after {
+    left:106px;
+    content: "\e6a6" !important;
+}
+.d_td input[type="text"]{
+    outline: none;
+    text-decoration: none;
+    border: 1px solid #ababab;
+    width: 146px;
+    height: 31px;
+    line-height: 31px;
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    margin-top: 19px;
+    text-align: center;
+}
+.price{
+    background-color: #dbdede;
+    border: 1px solid #dbdede !important;
+    text-align: center;
+}
+.d1>div>span,.d2>div>span,.d3>div>span{
+    display: block;
+    text-align: center;
+    width: 140px;
+}
+#layer_content{
+    height:auto;
+    clear: both;
+    border: 1px solid #ababab;
+    border-left:none ;
+    width: 1020px;
+    margin: 22px auto;
+}
+
+.save{
+    display: block;
+}
+
+.ipt_div{
+    width: 100% !important;
+}
+.ipt_div div{
+    width: 890px;
+}
+
+.ipt_fa{
+    width: 122px !important;
+    height: 44px;
+    line-height: 44px;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid #dbdede !important;
+    background-color: #FFFFFF;
+    font-size: 18px;
+    text-align: center;
+    float: right;
+    position: absolute;
+    top:26px;
+    right: 160px;
+}
+
+.ipt_fa input{
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.up{
+    width: 122px;
+    height: 44px;
+    border-radius: 10px;
+    float: right;
+    position: absolute;
+    top: 26px;
+    right: 12px;
+}
+#inputFalse{
+    position: relative;
+}
+#ipt_text{
+    height: 102px;
+    line-height: 102px;
+}
+#ipt_text{
+    float: left;
+    margin-left: 20px;;
+}
+#inputTrue img{
+    width: 83px;
+    height: 78px;
+    vertical-align: middle;
+
+}
+#inputTrue{
+    line-height: 102px;
+    padding-left: 159px;
+    width: 700px;
+}
+#inputTrue>div{
+    float: left;
+    width: auto;
+}
+.d_tdOne{
+    height: 102px;
+}
+.ipt_div>span{
+    height: 102px;
+    line-height: 102px;
+}
+.ipt_div>div {
+    height: 102px;
+}
+.change_ipt{
+    display: inline-block;
+    width: 60px;
+    height:18px;
+    position: relative;
+    vertical-align: text-bottom;
+    font-size: 14px;
+    color: #ababab;
+    line-height: 18px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.change_ipt input{
+    position: absolute;
+    top:0;left: 0;
+    right:0;
+    bottom:0;
+    opacity: 0;
+}
+.up_suss{
+    float: right;
+    width: 122px;
+    height: 42px;
+    margin-top: 30px;
+    border-radius: 10px;
+    background-color: #29a669;
+}

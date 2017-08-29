@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8" name="viewport"    content="width=device-width, initial-scale=1">
+    <title>任务配置</title>
+    <link rel="stylesheet" type="text/css" href="../../css/common/common.css" />
+    <link rel="stylesheet" type="text/css" href="../../font/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/taskManagement.css" />
+</head>
+
+<body>
+
+<section>
+    <div id="header_input">
+        <input type="button" value="新增+" class="bc gbtn" id="add" />
+    </div>
+
+    <div id="table_div">
+        <table border="1" cellspacing="0" cellpadding="0">
+            <tr>
+                <th class="t1">业务模块</th>
+                <th class="t2">业务名称</th>
+                <th class="t3">业务地区</th>
+                <th class="t4">目标</th>
+                <th class="t5">单价</th>
+                <th class="t6">创收</th>
+                <th class="t7">奖励</th>
+                <th class="t8">指定分组</th>
+                <th class="t9">指定等级</th>
+                <th class="t10">操作</th>
+            </tr>
+            <tr>
+                <td>中云在线</td>
+                <td>南昌转资费</td>
+                <td>南昌</td>
+                <td>接通10个</td>
+                <td>3.25</td>
+                <td>100</td>
+                <td><img src="../../images/renwu-jiangli.png" alt=""> <span>100</span></td>
+                <td>10086</td>
+                <td>3</td>
+                <td>
+                    <input type="button" class="sbtn cb" value="编辑" />
+                    <input type="button" class="sbtn ql del_ipt" value="删除" />
+                    <input type="button" class="sbtn fz" value="复制" />
+                </td>
+            </tr>
+
+
+
+        </table>
+
+        <div id="page">
+            <div>
+
+            </div>
+
+            <div id="page_right">
+                <span>共	记录<span>4</span>条，每页<span>10</span>条</span>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<div id="layer">
+    <div class="layer_tit">
+        <span>新增项目</span>
+        <i id="close_lay" class="iconfont icon-close"></i>
+    </div>
+
+    <div id="layer_content">
+        <div class="d_td">
+            <div class="d1">
+                <span>业务模块</span>
+                <div>
+                    <div class="select dowebok">
+                        <span class="placeholder">请选择</span>
+                        <ul>
+                            <li>百度</li>
+                            <li>谷歌</li>
+                            <li>雅虎5</li>
+                            <li>新浪</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="d2">
+                <span>业务地区</span>
+                <div>
+                    <div class="select dowebok">
+                        <span class="placeholder">请选择</span>
+                        <ul>
+                            <li>德阳</li>
+                            <li>简阳</li>
+                            <li>成都</li>
+                            <li>眉山</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="d3">
+                <span>业务名称</span>
+                <div>
+                    <div class="select dowebok">
+                        <span class="placeholder">请选择</span>
+                        <ul>
+                            <li>德阳</li>
+                            <li>简阳</li>
+                            <li>成都</li>
+                            <li>眉山</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d_td">
+            <div class="d1">
+                <span>任务目标</span>
+                <div>
+                    <div class="select dowebok">
+                        <span class="placeholder">接通成功</span>
+                        <ul>
+                            <li>接通成功</li>
+                            <li>接通成功</li>
+                            <li>接通成功</li>
+                            <li>接通成功</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="d2">
+                <span>任务数量</span>
+                <div>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="d3">
+                <span>指定分组</span>
+                <div>
+                    <div class="select dowebok">
+                        <span class="placeholder">请选择</span>
+                        <ul>
+                            <li>德阳</li>
+                            <li>简阳</li>
+                            <li>成都</li>
+                            <li>眉山</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="d_td">
+            <div class="d1">
+                <span>单价</span>
+                <div>
+                    <input type="text" value="5" class="price" disabled>
+                </div>
+            </div>
+            <div class="d2">
+                <span>经验奖励</span>
+                <div>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="d3">
+                <span>业务类型</span>
+                <div>
+                    <div class="select dowebok">
+                        <span class="placeholder">请选择</span>
+                        <ul>
+                            <li>百度</li>
+                            <li>谷歌</li>
+                            <li>雅虎5</li>
+                            <li>新浪</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="d_td">
+            <div class="d1">
+                <span>创收</span>
+                <div>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="d2">
+                <span>开始时间</span>
+                <div>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="d3">
+                <span>结束时间</span>
+                <div>
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+
+        <div class="d_td">
+            <div class="d1">
+                <span>操作人员</span>
+                <div>
+                    <span>某某</span>
+                </div>
+            </div>
+            <div class="d2">
+                <span>任务创建时间</span>
+                <div>
+                   <span class="time">
+                       <span>2017-15-15 </span>
+                       <span>15:45:45</span>
+                   </span>
+                </div>
+            </div>
+            <div class="d3">
+                <span></span>
+                <div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <input type="button" name="" id="" value="保存" class="bc gbtn save" />
+
+</div>
+
+</body>
+<script type="text/javascript" src="../../js/common/jquery-2.2.3.js"></script>
+<script type="text/javascript" src="../../js/common/common.js"></script>
+<script type="text/javascript" src="../../js/taskManagement.js"></script>
+
+</html>

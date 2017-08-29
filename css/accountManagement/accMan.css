@@ -1,0 +1,52 @@
+.t1{
+    width:112px;
+}
+.t2{
+    width:130px;
+}
+.t3{
+    width:392px;
+}
+.t4{
+    width:220px;
+}
+.t5{
+    width:244px;
+}
+table .sl,
+table .ql {
+    margin-left: 60px;
+}
+
+#layer {
+    width: 754px;
+    height: 520px;
+    /*border: 1px solid red;*/
+}
+
+.save {
+    display: block;
+    margin: 0 auto;
+}
+
+.layer_tab input,.layer_tab .select{
+    width:82%;
+}
+.btnG {
+    width: 100%;
+    clear: both;
+    text-align: center;
+}
+.save,.reset {
+    display: inline-block;
+    margin-right:10px;
+}
+.layerLitTab {
+    border:none;
+    background: #cbcbcb;
+}
+.tree {
+    width: 100%;
+    padding-bottom:20px;
+    border-bottom:solid 1px #bebebe;
+}

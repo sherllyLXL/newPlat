@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>区域配置</title>
+    <link rel="stylesheet" type="text/css" href="../../css/common/common.css"/>
+    <link rel="stylesheet" type="text/css" href="../../font/iconfont.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/platform/regionalAllocation.css"/>
+</head>
+
+<body>
+
+
+<section>
+
+    <div id="header_input">
+        <input type="button" value="新增+" class="bc gbtn" id="add"/>
+    </div>
+
+    <div id="table_div">
+        <table border="1" cellspacing="0" cellpadding="0">
+            <tr>
+                <th class="t1">平台名称</th>
+                <th class="t2">区域</th>
+                <th class="t5">操作</th>
+            </tr>
+            <tr>
+                <td>中云在线</td>
+                <td>德阳</td>
+                <td>
+                    <input type="button" class="sbtn cb" value="编辑"/>
+                    <input type="button" class="sbtn ql del_ipt" value="删除"/>
+                </td>
+            </tr>
+
+        </table>
+
+        <div id="page">
+            <div>
+
+            </div>
+
+            <div id="page_right">
+                <span>共	记录<span>4</span>条，每页<span>10</span>条</span>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<div id="layer">
+    <div class="layer_tit">
+        <span>新增业务配置信息</span>
+        <i id="close_lay" class="iconfont icon-close"></i>
+    </div>
+
+    <div class="layer_content">
+        <div class="layer_tab">
+            <span>平台名称：</span>
+            <div class="select dowebok">
+                <span class="placeholder">请选择</span>
+                <ul>
+                    <li>百度</li>
+                    <li>谷歌</li>
+                    <li>雅虎</li>
+                    <li>新浪</li>
+                </ul>
+            </div>
+        </div>
+        <div class="layer_tab">
+            <span>区域：</span>
+            <input type="text" placeholder="请输入区域名称">
+        </div>
+    </div>
+
+    <div class="btnG">
+        <input type="button" name="" id="" value="保存" class="bc zbtn save"/>
+        <input type="button" name="" id="" value="重置" class="bc zbtn ql reset"/>
+    </div>
+
+</div>
+
+<script type="text/javascript" src="../../js/common/jquery-2.2.3.js"></script>
+<script type="text/javascript" src="../../js/common/common.js"></script>
+<script type="text/javascript" src="../../js/platform/regionalAllocation.js"></script>
+</body>
+
+</html>

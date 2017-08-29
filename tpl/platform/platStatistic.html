@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>平台数据</title>
+    <link rel="stylesheet" type="text/css" href="../../css/common/common.css"/>
+    <link rel="stylesheet" type="text/css" href="../../font/iconfont.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/platform/platStatistic.css"/>
+</head>
+
+<body>
+
+<section>
+
+    <div id="header_input">
+        <input type="button" value="新增+" class="bc gbtn" id="add"/>
+    </div>
+
+    <div id="table_div">
+        <table border="1" cellspacing="0" cellpadding="0">
+            <tr>
+                <th class="t1">平台名称</th>
+                <th class="t2">业务名称</th>
+                <th class="t3">业务类型</th>
+                <th class="t4">单价</th>
+                <th class="t5">用户名</th>
+                <th class="t6">区域</th>
+                <th class="t7">分组</th>
+                <th class="t8">呼叫时间</th>
+                <th class="t10">时长</th>
+                <th class="t10">状态</th>
+                <th class="t10">录音</th>
+                <th class="t9">操作</th>
+            </tr>
+            <tr>
+                <td>中云在线</td>
+                <td>3G转4G</td>
+                <td>呼入</td>
+                <td>1</td>
+                <td>admin</td>
+                <td>德阳</td>
+                <td>10086</td>
+                <td>2017/7/12 20:14:12</td>
+                <td>50</td>
+                <td>成功</td>
+                <td>xx.mp3</td>
+                <td>
+                    <input type="button" class="sbtn cb" value="编辑"/>
+                    <input type="button" class="sbtn ql del_ipt" value="删除"/>
+                </td>
+            </tr>
+
+
+        </table>
+
+        <div id="page">
+            <div>
+
+            </div>
+
+            <div id="page_right">
+                <span>共	记录<span>4</span>条，每页<span>10</span>条</span>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<div id="layer">
+    <div class="layer_tit">
+        <span>新增数据</span>
+        <i id="close_lay" class="iconfont icon-close"></i>
+    </div>
+
+    <div class="layer_content">
+        <div class="layer_content_left">
+            <div class="layer_tab">
+                <span>平台名称：</span>
+                <div class="select dowebok">
+                    <span class="placeholder">请选择</span>
+                    <ul>
+                        <li>百度</li>
+                        <li>谷歌</li>
+                        <li>雅虎</li>
+                        <li>新浪</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="layer_tab">
+                <span>业务类型：</span>
+                <div class="select dowebok">
+                    <span class="placeholder">请选择</span>
+                    <ul>
+                        <li>百度</li>
+                        <li>谷歌</li>
+                        <li>雅虎</li>
+                        <li>新浪</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="layer_tab">
+                <span>用户名：</span>
+                <input type="text" placeholder="请输入用户名">
+            </div>
+            <div class="layer_tab">
+                <span>分组：</span>
+                <input type="text" placeholder="请输入分组">
+            </div>
+            <div class="layer_tab">
+                <span>时长：</span>
+                <input type="text" placeholder="请输入时长">
+            </div>
+            <div class="layer_tab">
+                <span>录音：</span>
+                <input type="text" placeholder="请输入连接地址">
+            </div>
+        </div>
+        <div class="layer_content_right">
+            <div class="layer_tab">
+                <span>业务名称：</span>
+                <input type="text" placeholder="请输入业务名称">
+            </div>
+            <div class="layer_tab">
+                <span>单价：</span>
+                <input type="text" placeholder="请输入单价">
+            </div>
+            <div class="layer_tab">
+                <span>区域：</span>
+                <input type="text" placeholder="请输入区域">
+            </div>
+            <div class="layer_tab">
+                <span>呼叫时间：</span>
+                <input type="text" placeholder="请输入呼叫时间">
+            </div>
+            <div class="layer_tab">
+                <span>状态：</span>
+                <input type="text" placeholder="请输入状态">
+            </div>
+        </div>
+
+    </div>
+    <div class="btnG">
+        <input type="button" name="" id="" value="保存" class="bc zbtn save"/>
+        <input type="button" name="" id="" value="重置" class="bc zbtn ql reset"/>
+    </div>
+
+</div>
+
+<script type="text/javascript" src="../../js/common/jquery-2.2.3.js"></script>
+<script type="text/javascript" src="../../js/common/common.js"></script>
+<script type="text/javascript" src="../../js/platform/platStatistic.js"></script>
+</body>
+
+</html>
