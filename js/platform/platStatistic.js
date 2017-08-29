@@ -17,3 +17,8 @@ $(".reset").on("click",function(){
     $(".layer_tab").find("input").val("");
     $(".layer_tab").find(".select span").text("请选择");
 });
+
+$(document).on('click','.see',function () {
+    var content =  top.document.getElementById("content");
+    content.src = 'platform/details.html';
+});
