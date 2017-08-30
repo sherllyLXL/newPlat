@@ -190,3 +190,9 @@ $("th .icon-search").on("click",function(){
     });
     $(this).siblings(".search_div_table").toggle(400);
 });
+
+// =======弹出试听=======
+$(document).on('click','.my_audio',function () {
+    console.log(1);
+    $(this).siblings('.simple-player-container').fadeIn();
+});

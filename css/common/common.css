@@ -584,3 +584,20 @@ td {
 .violetT {
 	color:#9d0e3f;
 }
+
+/*======播放器====*/
+.progressbar{
+	margin: 0;
+}
+.simple-player-container{
+	display: none;
+	position: absolute;
+	top: 5px;
+	left:100%;
+}
+.lisen{
+	position: relative;
+}
+audio{
+	display: none !important;
+}

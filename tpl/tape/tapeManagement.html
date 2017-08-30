@@ -8,7 +8,9 @@
     <link rel="stylesheet" type="text/css" href="../../css/common/common.css" />
     <link rel="stylesheet" type="text/css" href="../../font/iconfont.css" />
     <link rel="stylesheet" type="text/css" href="../../css/tape/tapeManagement.css" />
+    <link rel="stylesheet" href="../../js/common/player/simpleplayer.css">
 </head>
+
 <body>
 
 <section>
@@ -20,11 +22,46 @@
     <div id="table_div">
         <table border="1" cellspacing="0" cellpadding="0">
             <tr>
-                <th class="t1">上传者</th>
-                <th class="t2">项目</th>
-                <th class="t3">地区</th>
-                <th class="t4">外呼时间</th>
-                <th class="t5">时长</th>
+                <th class="t1">上传者
+                    <i class="iconfont icon-search"></i>
+                    <div class="search_div_table">
+                        <i class="iconfont icon-search"></i>
+                        <input type="text" value=""/>
+                        <span>搜索</span>
+                    </div>
+                </th>
+                <th class="t2">项目
+                    <i class="iconfont icon-search"></i>
+                    <div class="search_div_table">
+                        <i class="iconfont icon-search"></i>
+                        <input type="text" value=""/>
+                        <span>搜索</span>
+                    </div>
+                </th>
+                <th class="t3">地区
+                    <i class="iconfont icon-search"></i>
+                    <div class="search_div_table">
+                        <i class="iconfont icon-search"></i>
+                        <input type="text" value=""/>
+                        <span>搜索</span>
+                    </div>
+                </th>
+                <th class="t4">外呼时间
+                    <i class="iconfont icon-search"></i>
+                    <div class="search_div_table">
+                        <i class="iconfont icon-search"></i>
+                        <input type="text" value=""/>
+                        <span>搜索</span>
+                    </div>
+                </th>
+                <th class="t5">时长
+                    <i class="iconfont icon-search"></i>
+                    <div class="search_div_table">
+                        <i class="iconfont icon-search"></i>
+                        <input type="text" value=""/>
+                        <span>搜索</span>
+                    </div>
+                </th>
                 <th class="t8">操作</th>
             </tr>
             <tr>
@@ -33,9 +70,10 @@
                 <td>某某木某某地区</td>
                 <td>2017/8/27 14:28:22</td>
                 <td>120</td>
-                <td>
-                    <input type="button" class="sbtn cb" value="试听" />
+                <td class="lisen">
+                    <input type="button" class="sbtn cb my_audio" value="试听" />
                     <input type="button" class="sbtn ql goway" value="批准" />
+                    <audio class="player" src="http://so1.111ttt.com:8282/2017/4/05m/10/298101104389.m4a?tflag=1504097665&pin=ec360ec2f8d252f6074a535bfb8a362f&ip=171.217.60.91#.mp3"></audio>
                 </td>
             </tr>
             <tr>
@@ -44,9 +82,10 @@
                 <td>某某木某某地区</td>
                 <td>2017/8/27 14:28:22</td>
                 <td>120</td>
-                <td>
-                    <input type="button" class="sbtn cb" value="试听" />
+                <td class="lisen">
+                    <input type="button" class="sbtn cb my_audio" value="试听" />
                     <input type="button" class="sbtn ql goway" value="批准" />
+                    <audio class="player" src="http://so1.111ttt.com:8282/2017/4/05m/10/298101104389.m4a?tflag=1504097665&pin=ec360ec2f8d252f6074a535bfb8a362f&ip=171.217.60.91#.mp3"></audio>
                 </td>
             </tr>
             <tr>
@@ -55,9 +94,10 @@
                 <td>某某木某某地区</td>
                 <td>2017/8/27 14:28:22</td>
                 <td>120</td>
-                <td>
-                    <input type="button" class="sbtn cb" value="试听" />
+                <td class="lisen">
+                    <input type="button" class="sbtn cb my_audio" value="试听" />
                     <input type="button" class="sbtn ql gray goway" value="已批准" />
+                    <audio class="player" src="http://so1.111ttt.com:8282/2017/4/05m/10/298101104389.m4a?tflag=1504097665&pin=ec360ec2f8d252f6074a535bfb8a362f&ip=171.217.60.91#.mp3"></audio>
                 </td>
             </tr>
 
@@ -89,7 +129,20 @@
 </div>
 
 <script type="text/javascript" src="../../js/common/jquery-2.2.3.js"></script>
+<script src="../../js/common/player/jquery.simpleplayer.js"></script>
 <script type="text/javascript" src="../../js/common/common.js"></script>
 <script type="text/javascript" src="../../js/tape/tapManagement.js"></script>
+<script type="text/javascript">
+    window.onload=function () {
+        var settings = {
+            progressbarWidth: '200px',  //进度条的宽度
+            progressbarHeight: '10px',   //进度条的高度
+            progressbarColor: '#22ccff',  //进度条的颜色
+            progressbarBGColor: '#eeeeee',  //进度条的背景颜色
+            defaultVolume: 0.8
+        };
+        $(".player").player(settings);
+    }
+</script>
 </body>
 </html>
