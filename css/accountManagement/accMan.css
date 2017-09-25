@@ -49,4 +49,6 @@ table .ql {
     width: 100%;
     padding-bottom:20px;
     border-bottom:solid 1px #bebebe;
+    height: 230px;
+    overflow-y: scroll;
 }
